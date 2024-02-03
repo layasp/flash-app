@@ -1,0 +1,96 @@
+div {
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+
+  h1, h2 {
+    color: #333;
+    border-bottom: 2px solid #333131;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .App {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .flashcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .flashcard-container > div {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .flashcard-container p {
+    margin: 5px 0;
+    color: #333;
+  }
+
+  
+  .flashcard-container:hover {
+    transform: rotateY(180deg);
+  }
+  
+  .flashcard-container.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .front,
+  .back {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+  }
